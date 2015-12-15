@@ -1,0 +1,20 @@
+{
+  "name": "Drindrin",
+  "description": "a nodebot",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "mocha 'test/setup.js' 'test/**/**.spec.js'"
+  },
+  "dependencies": {
+    "johnny-five": "^0.9.16"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
