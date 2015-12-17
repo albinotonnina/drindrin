@@ -1,13 +1,21 @@
 'use strict';
-
 var five = require('johnny-five');
-var DrindrinBot = require('./bot/index');
+var Puppet = require('./lib/puppet');
 
 var board = new five.Board();
 
-board.on("ready", function() {
-    new DrindrinBot(five);
-});
+board.on("ready", _initPuppet);
+
+function _initPuppet(){
+    this.puppet = new Puppet({});
+
+
+    this.repl.inject({
+        f1: this.puppet.front1,
+        f2: this.puppet.front2
+    });
+
+}
 
 
 
