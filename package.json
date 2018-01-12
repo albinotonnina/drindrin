@@ -11,13 +11,13 @@
     "test": "mocha 'test/setup.js' 'test/**/**.spec.js'"
   },
   "dependencies": {
-    "johnny-five": "^0.9.16"
+    "johnny-five": "^0.13.0"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4",
-    "mock-firmata": "0.0.4",
-    "sinon": "^1.17.2",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "mock-firmata": "0.2.0",
+    "sinon": "^4.1.4",
     "sinon-chai": "^2.8.0",
     "underscore": "^1.8.3"
   }
